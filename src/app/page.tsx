@@ -21,7 +21,7 @@ export default async function Home() {
           <p>Join out researchers </p>
 
           <div className="w-full mt-4">
-            {!isAuth ? (
+            {isAuth ? (
               <FileUpload />
             ) : (
               <Link href="/sign-in">
